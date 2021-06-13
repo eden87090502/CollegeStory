@@ -1,1 +1,642 @@
+<!-- omit in toc -->
+# CollegeStory Vocabulary Specification 1.0 
+<!-- omit in toc -->
+### Deng Tai Document 12 June 2021 
 
+**This version:**  
+https://hackmd.io/@ddfly/SJVF1fCYO
+
+**Latest version:**  
+https://hackmd.io/@ddfly/SJVF1fCYO
+
+**Previous version:**  
+None
+
+**Author:**  
+[高登泰](mailto:eden87090507@gmail.com), National Yang Ming Chiao Tung University  
+ 
+
+**Contributors:**  
+Members of NYCU Workshop: [A Computational Journey Towards Humanities and Creativity: Starting from Graphs](http://e.cctcc.art/c1632).
+<!-- omit in toc -->
+## Abstract
+
+這是一個紀錄大學故事的知識圖譜，以歌曲為核心元素，輔以事件、人物組成。
+
+起因是接近大學畢業，想要整理大學發生的大小事情，做大學階段的收束。在一次偶然翻閱照片與限時動態典藏時，發現自己有發歌曲限時的習慣，一方面利用歌曲抒發心情，另一方面，歌曲也代表著那個時間段的故事。現在聽到那些歌曲也不由得想起那段回憶，因此利用這個報告好好整理這些故事。
+<!-- omit in toc -->
+## Table of Contents
+
+- [MyOntology at a glance](#myontology-at-a-glance)
+  - [A-Z of MyOntology terms](#a-z-of-myontology-terms)
+  - [Example](#example)
+- [Introduction: MyOntology Basics](#introduction-myontology-basics)
+  - [Background](#background)
+  - [The Basic Idea](#the-basic-idea)
+  - [What’s MyOntology for?](#whats-myontology-for)
+  - [MyOntology cross_reference: Listing Classes and Properties](#myontology-cross_reference-listing-classes-and-properties)
+- [Classes and Properties (full detail)](#classes-and-properties-full-detail)
+  - [Classses](#classses)
+  - [Properties](#properties)
+- [External Vocabulary References](#external-vocabulary-references)
+  - [Schema.org Vocabulary](#schemaorg-vocabulary)
+  - [FOAF (Friend of a Friend) Vocabulary](#foaf-friend-of-a-friend-vocabulary)
+  - [Dublin Core Terms](#dublin-core-terms)
+- [Acknowledgments](#acknowledgments)
+- [Recent Changes (未來改版時用)](#recent-changes-未來改版時用)
+
+## MyOntology at a glance 
+
+This vocabulary defines 5 classes and 48 properties.
+
+Main MyOntology terms, grouped in **Class** categories. 
+
+- **[Event](#Event)** ： 任何形式的活動，活動必須包含地點與時間。活動規模不拘，類型不拘。
+- **[MusicRecording](#MusicRecording)**：音樂錄音，泛指一首歌曲。不限定是否完整，可以是一段歌曲片段或是一段哼唱片段。
+- **[Organization](#Organization)** :由人群組成之團體，不限組成方式。
+- **[Period](#Period)**：指人生中某一段有意義的時間區段，其區段為主觀認定。
+- **[Person](#Person)**：人物，其包括已過世、沒有生命分類以及虛擬人物。
+- **[Photograph](#Photograph)**：照片。
+
+
+
+| Event | MusicRecording |Organization| Period |Person|Photograph|
+| -------- | -------- | -------- |-------|-------| -------- |
+| [`attendee`](#attendee)|[`abstract`](#abstract)|[`activeEndDate`](#activeEndDate)|[`description`](#description)|[`activeEndDate`](#activeEndDate)|[`abstract`](#abstract)
+| [`category`](#category)|[`arranger`](#arranger)|[`activeStartDate`](#activeStartDate)|[`endDate`](#endDate)|[`activeStartDate`](#activeStartDate)|[`dateCreated`](#dateCreated)
+|[`description`](#description)|[`associatedPerson`](#associatedPerson)|[`description`](#description)|[`name`](#name)|[`affiliation`](#affiliation)|[`datePublished`](#datePublished)
+|[`duration`](#duration)|[`byArtist`](#byArtist)|[`email`](#email)|[`startDate`](#startDate)|[`birthDate`](#irthDate)|[`locationalCreated`](#locationalCreated)
+|[`endDate`](#endDate)|[`byCoverArtist`](#byCoverArtist)|[`image`](#image)||[`deathDate`](#deathDate)|[`mentions`](#mentions)
+|[`image`](#image)|[`composer`](#composer)|[`name`](#name)||[`email`](#email)|[`name`](#name)
+|[`location`](#location)|[`datePublished`](#datePublished)|[`nickname`](#nickname)||[`homeLocation`](#homeLocation)|[`recordAt`](#recordAt)
+|[`name`](#name)|[`duration`](#duration)|[`performerIn`](#performerIn)||[`image`](#image)|[`screenshot`](#screenshot)
+|[`period`](#period)|[`inAlbum`](#inAlbum)|[`socialMediaUrl`](#socialMediaUrl)||[`name`](#name)|[`text`](#text)
+|[`startDate`](#startDate)|[`inLanguage`](#inLanguage)|||[`nickname`](#nickname)|[`url`](#url)
+|[`subEvent`](#subEvent)|[`lyricist`](#lyricist)|||[`performerIn`](#performerIn)
+|[`superEvent`](#superEvent)|[`meaningfulTime`](#meaningfulTime)|||[`socialMediaUrl`](#socialMediaUrl)
+||[`mediaUrl`](#mediaUrl)
+||[`musicGenre`](#musicGenre)
+||[`name`](#name)
+||[`period`](#period)
+||[`photograph`](#photograph)
+||[`publisher`](#publisher)
+||[`symbolizedEvent`](#symbolizedEvent)
+||[`symbolizedMood`](#symbolizedMood)
+||[`symbolizedPerson`](#symbolizedPerson)
+
+
+### A-Z of MyOntology terms
+
+
+
+* **Classes:** | [`Event`](#Event) | [`MusicRecording`](#MusicRecording)|[`Period`](#Period)|[`Person`](#Person) |[`Photograph`](#Photograph) |
+* **Properties:** 
+
+| category A | category B | category C |category D | category E | category H |category I | category L | category M |category N | category P | category R |category S | category T | category U |
+| -------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|
+|[`abstract`](#abstract)|[`birthDate`](#birthDate) |[`category`](#category)|[`dateCreated`](#dateCreated)|[`email`](#email)|[`homeLocation`](#homeLocation)|[`image`](#image)|[`location`](#location)|[`meaningfulTime`](#meaningfulTime)|[`name`](#name)|[`performerIn`](#performerIn)|[`recordAt`](#recordAt)|[`screenshot`](#screenshot)|[`text`](#text)|[`url`](#url)|
+|[`activeEndDate`](#activeEndDate)|[`byArtist`](#byArtist)|[`composer`](#composer)|[`datePublished`](#datePublished)|[`endDate`](#endDate)||[`inAlbum`](#inAlbum)|[`locationalCreated`](#locationalCreated)|[`mediaUrl`](#mediaUrl)|[`nickname`](#nickname)|[`period`](#period)||[`socialMediaUrl`](#socialMediaUrl)|
+|[`activeStartDate`](#activeStartDate)|[`byCoverArtist`](#byCoverArtist)||[`deathDate`](#deathDate)|||[`inLanguage`](#inLanguage)|[`lyricist`](lyricist)|[`mentions`](#mentions)||[`photograph`](#photograph)||[`startDate`](#startDate)|
+|[`affiliation`](#affiliation)|||[`description`](#description)|||||[`musicGenre`](#musicGenre)||[`publisher`](#publisher)||[`subEvent`](#subEvent)|
+|[`arranger`](#affiliation)|||[`descriptionStory`](#descriptionStory)|||||||||[`superEvent`](#superEvent)|
+|[`associatedPerson`](#associatedPerson)|||[`duration`](#duration)|||||||||[`symbolizedEvent`](#symbolizedEvent)
+|[`attendee`](#attendee)||||||||||||[`symbolizedMood`](#symbolizedMood)|
+|||||||||||||[`symbolizedPerson`](#symbolizedPerson)|
+
+### Example
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+```XML
+<foaf:Person rdf:about="#danbri" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <foaf:name>Dan Brickley</foaf:name>
+  <foaf:homepage rdf:resource="http://danbri.org/" />
+  <foaf:openid rdf:resource="http://danbri.org/" />
+  <foaf:img rdf:resource="/images/me.jpg" />
+</foaf:Person>
+```
+
+## Introduction: MyOntology Basics
+
+主要的類別(Class)分類為歌曲(MusicRecording)以及事件(Event)，輔以人物(Person)、時段(Period)以及照片(Photograph)的類別。各類別搭配屬性(Property)之數量，以歌曲(MusicRecording)最多有22項，並可以再細分為歌曲自身的屬性以及歌曲對於自身的影響。前者例如歌曲發行日、歌曲作曲家等；後者例如歌曲象徵的事件與感受等。其他屬性個別數量：事件(Event)有12項、人物(Person)有12項、照片(Photograph)有10項以及時段(Period)有4項。
+
+
+## Classes and Properties (full detail)
+
+### Classses
+<!-- omit in toc -->
+#### [:Event](#Event)
+
+任何形式的活動，活動必須包含地點與時間。活動規模不拘，大則一個專案，小則一個聊天對話都可以視為"event"。活動內容可以是關於學業、社團、朋友、愛情..等，無特定限制類型。
+
+| Property Name           | Expected Type                                             | Description                                                                                                                 |
+| ----------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`attendee`](#attendee) | [`:organization`](#organization) [`:Person`](#Person)               | A person or an organization attending the event.|
+| [`category`](#category) | xsd:string |Event category. Recommend text: work,club,love,daily,lesson,friendship.. |
+| [`description`](#description)   | xsd:string | A description of the item.Including the meaning of the event/Organization/period and the mood in this event/period.|
+| [`duration`](#duration)|xs:duration |The duration of the event or media(movie,audio, recording,etc).|
+| [`endDate`](#endDate)|xsd:date|The end date and time of the item.|
+| [`image`](#image)|`URL`|An image of the item.|
+| [`location`](#location)|xsd:string|The location of, for example, where an event is happening, where an organization is located, or where an action takes place.|
+| [`name`](#name)|xsd:string|The name of the item.|
+| [`period`](#period)|[`:period`](#period)|The stage that this item symbolizes.|
+| [`startDate`](#startDate)|xsd:date|The start date and time of the item .|
+| [`subEvent`](#subEvent)|[`:Event`](#Event)|An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference. 
+| [`superEvent`](#superEvent)|[`:Event`](#Event)|An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.|
+
+<!-- omit in toc -->
+#### [:MusicRecording](#MusicRecording)
+
+音樂錄音，泛指一首歌曲。不限定是否完整，可以是一段歌曲片段或是一段哼唱片段。
+
+| Property Name           | Expected Type                                             | Description                                                                                                                 |
+| ----------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`abstract`](#abstract) |xsd:string| An abstract is a short description that summarizes a CreativeWork.CreativeWork is refer to a Photograph or a MusicRecording. |
+| [`arranger`](#arranger) | [`:Organization`](#Organization) [`:Person`](#Person) | The person or organization who wrote a arrangement. |
+| [`associatedPerson` ](#associatedPerson)| [`:Oranganization`](#Organization) [`:Person`](#Person)|The person associated with the story about this song. |
+| [`byArtist`](#byArtist)  |[`:Oranganization`](#Organization) <br> [`:Person`](#Person) |The artist that performed this  MusicRecording. |
+| [`byCoverArtist`](#byCoverArtist) |[`:Oranganization`](#Organization)<br> [`:Person`](#Person) |The artist that covered this album or recording. |
+| [`composer`](#composer) |[`:Organization`](#Organization) [`:Person`](#Person) |The person or organization who wrote a composition.| 
+| [`datePublished`](#datePublished) |xsd:date|Date of the first broadcast/publication.|
+| [`descriptionStory`](#descriptionStory) |xsd:string|A description of the story.Including the meaning of the event.|
+| [`duration`](#duration) |xs:duration |The duration of the media(movie,audio recording,event,etc).|
+| [`inAlbum`](#inAlbum) |xsd:string |The album to which this recording belongs.|
+| [`inLanguage`](#inLanguage)|xsd:string|The language of the content or performance or used in an action.|
+| [`lyricist`](#lyricist) |[`:Organization`](#Organization) [`:Person`](#Person) |The person or organization who wrote lyrics.|
+| [`meaningfulTime`](#meaningfulTime)|xsd:date|The time when this song started to be meaningful to me.|
+| [`mediaUrl`](#mediaUrl) |`URL` |music media URL of the item.|
+| [`musicGenre`](#musicGenre)|xsd:string|Genre of the music.|
+| [ `name`](#name) |xsd:string|The name of the item.|
+| [`period`](#period) |[`:Period`](#Period) |The stage that this item symbolizes.|
+| [`photograph`](#photograph) |[`:Photograph`](#Photograph) |The photograph which recorded by this MusicRecording.|
+| [`publisher`](#publisher) |[`:Organization`](#Organization) [`:Person`](#Person) |The publisher of the MusicRecording.|
+| [`symbolizedEvent`](#symbolizedEvent)|[`:Event`](#Event) |The event symbolized by this song.|
+| [`symbolizedMood`](#symbolizedMood)|xsd:string|The mood symbolized by this song.|
+| [`symbolizedPerson`](#symbolizedPerson)|[`:Organization`](#Orangization) [`:Person`](#Person)|Person who symbolizaed by this song.|
+		
+#### [:Organization](#Organization)
+
+由人群組成之團體，不限組成方式。
+
+| Property Name           | Expected Type                                             | Description                                                                                                                 |
+| ----------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`activeEndDate`](#activeEndDate) | xsd:date| the time period with frequent interactions with this person or Organization. "activeEndDate" means the end date of it. |
+| [`activeStartDate`](#activeStartDate)|xsd:date|the time period with frequent interactions with this person or Organization. "activeStartDate" means the start date of it.
+| [`description`](#description)  | xsd:string | A description of the item.Including the meaning of the event/Organization/period and the mood in this event/period.|
+| [`email`](#email)|xsd:string|Email address.|
+| [`image`](#image)|`URL` |an image of the item.|
+| [`name`](#name) |xsd:string|The name of the item.|		
+| [`nickname`](#nickname)|xsd:string|The nickname of the item.|		
+| [`performerIn`](#performerIn)|[`:Event`](#Event) |Event that this person or Organization is a performer or participant in.|
+| [`socialMediaUrl`](#socialMediaUrl)|`URL` |URL of the social media.|
+
+#### [:Period](#Period)
+
+指人生中某一段有意義的時間區段，其區段為主觀認定。
+
+| Property Name           | Expected Type                                             | Description                                                                                                                 |
+| ----------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`description`](#description) |xsd:string | A description of the item.Including the meaning of the event/period and the mood in this event/period.|
+| [`endDate`](#endDate)|xsd:date|The end date and time of the item.|
+| [`name`](#name) |xsd:string|The name of the item.|
+| [`startDate`](#startDate)|xsd:date|The start date and time of the item.|
+ 
+		
+#### [:Person](#Person)
+
+人物，其包括已過世、沒有生命分類以及虛擬人物。
+
+| Property Name           | Expected Type                                             | Description                                                                                                                 |
+| ----------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`activeEndDate`](#activeEndDate) | xsd:date| the time period with frequent interactions with this person or Organization. "activeEndDate" means the end date of it. |
+| [`activeStartDate`](#activeStartDate)|xsd:date|the time period with frequent interactions with this person or Organization. "activeStartDate" means the start date of it.
+| [`affiliation`](#affiliation)|[`:Organization`](#Organization) |An organization that this person is affiliated with. For example, a school/university, a club, or a team.|
+| [`birthDate`](#birthDate)|xsd:date|Date of birth.|
+| [`deathDate`](#deathDate)|xsd:date|Date of death.|
+| [`email`](#email)|xsd:string|Email address.|
+| [`homeLocation`](#homeLocation)|xsd:string|A contact location for a person's residence.|
+| [`image`](#image)|`URL` |an image of the item.|
+| [`name`](#name) |xsd:string|The name of the item.|		
+| [`nickname`](#nickname)|xsd:string|The nickname of the item.|		
+| [`performerIn`](#performerIn)|[`:Event`](#Event) |Event that this person or Organization is a performer or participant in.|
+| [`socialMediaUrl`](#socialMediaUrl)|`URL` |URL of the social media.|
+		
+
+#### [:Photograph](#Photograph)
+
+照片。
+
+| Property Name           | Expected Type                                             | Description                                                                                                                 |
+| ----------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [`abstract`](#abstract) |xsd:string| An abstract is a short description that summarizes a CreativeWork.CreativeWork is refer to a Photograph or a MusicRecording. |
+| [`dateCreated`](#dateCreated)|xsd:date|The date on which the Photograph was created or the item was added to a DataFeed.|
+| [`datePublished`](#datePublished)|xsd:date|Date of first broadcast/publication.|
+| [`locationalCreated`](#locationalCreated)|xsd:string|The location where the Photograph was created, which may not be the same as the location depicted in the Photograph.|
+| [`mentions`](#mentions) |xsd:string|Indicates that the Photograph contains a reference to,but is not necessarily about a concept.|		
+| [`name`](#name) |xsd:string|The name of the item.|		
+| [`recordAt`](#recordAt)|[`:Event`](#Event) |The Event where the Photograph was recorded.The Photograph may capture all or part of the event.|	
+| [`screenshot`](#screenshot)|`SoftwareApplication` |A link to a screenshot image of the app.|		
+| [`text`](#text)|xsd:string|The textual content of this Photograph.|	 	
+| [`url`](#url) |`URL` |URL of the item.|
+	
+### Properties
+<!-- omit in toc -->
+#### `abstract`
+
+An abstract is a short description that summarizes a CreativeWork.CreativeWork is refer to a Photograph or a MusicRecording.
+
+| Values expected to be one of these types | Used on these types                                  |
+| ---------------------------------------- | ---------------------------------------------------- |
+| `xsd:string`                             | [`:MusicRecording`](#MusicRecording)<br> [`:Photograph`](#Photograph) |
+
+<!-- omit in toc -->
+#### `activeEndDate`
+
+The time period with frequent interactions with this person or Organization. “activeEndDate” means the end date of it.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date                                                            | [:Person](#Person) <br> [`:Organization`](#Organization) |
+
+<!-- omit in toc -->
+#### `activeStartDate`
+
+The time period with frequent interactions with this person or Organization. “activeStartDate” means the start date of it.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date                                                            | [`:Person`](#Person)<br> [`:Organization`](#Organization) |
+<!-- omit in toc -->
+#### `affiliation`
+
+An organization that this person is affiliated with. For example, a school/university, a club, or a team.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`Organization`](#Organization)                                     |[`:Person`](#Person)|
+
+<!-- omit in toc -->
+#### `arranger`
+
+The person or organization who wrote a arrangement.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Organization`](#Organization)<br>[`:Person`](#Person) | [`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `associatedPerson`
+
+The person associated with the story about this song.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Organization`](#Organization)<br>[`:Person`](#Person)| [`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `attendee`
+
+A person or an organization attending the event.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Organization`](#Organization) <br>[`:Person`](#Person)           | [`:Event`](#Event) |
+<!-- omit in toc -->
+#### `birthDate`
+
+Date of birth.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date | [`:Person`](#Person) |
+<!-- omit in toc -->
+#### `byArtist`
+
+The artist that performed this  MusicRecording.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Oranganization`](#Organization)<br> [`:Person`](#Person)| [`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `byCoverArtist`
+
+The artist that covered this album or recording.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Oranganization`](#Organization)<br> [`:Person`](#Person)| [`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `category`
+
+Event category.Recommend text:work,club,love,daily,lesson,friendship…
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string | [`:Event`](#Event) |
+<!-- omit in toc -->
+#### `composer`
+
+The person or organization who wrote a composition.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Organization`](#Organization) <br>[`:Person`](#Person) |[`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `dateCreated`
+
+The date on which the Photograph was created or the item was added to a DataFeed.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date| [`:Photograph`](#Photograph) |
+<!-- omit in toc -->
+#### `datePublished`
+
+Date of the first broadcast/publication.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date                                          | [`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `deathDate`
+
+Date of death.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date | [`:Person`](#Person) |
+<!-- omit in toc -->
+#### `description`
+
+A description of the item.Including the meaning of the event/Organization/period and the mood in this event/period.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string| [`:Event`](#Event)<br> [`:Organization`](#Organization)<br> [`:Period`](#Period) |
+<!-- omit in toc -->
+#### `descriptionStory`
+
+A description of the story.Including the meaning of the event.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string                                        | [`:MusicRecording`](#MusicRecording) |
+
+<!-- omit in toc -->
+#### `duration`
+
+The duration of the media(movie,audio recording,event,etc).
+
+status：testing.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xs:duration | [`:Event`](#Event)<br>[`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `email`
+
+Email address.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string| [`:Organization`](#Organization)<br>[`:Person`](#Person) |
+<!-- omit in toc -->
+#### `endDate`
+
+The end date and time of the item.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date | [`:Event`](#Event)<br> [`:Period`](#Period) |
+<!-- omit in toc -->
+#### `homeLocation`
+
+A contact location for a person’s residence.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+|xsd:string| [`:Person`](#Person) |
+<!-- omit in toc -->
+#### `image`
+
+an image of the item.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| URL | [`:Event`](#Event)<br>[`:Organization`](#Organization) <br> [`:Person`](#Person) |
+<!-- omit in toc -->
+#### `inAlbum`
+
+The album to which this recording belongs.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+|xsd:string | [`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `inLanguage`
+
+The language of the content or performance or used in an action.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+|xsd:string | [`:MusicRecording`](#MusicRecording) |
+<!-- omit in toc -->
+#### `location`
+
+The location of, for example, where an event is happening, where an organization is located, or where an action takes place.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string | [`:Event`](#Event) |
+<!-- omit in toc -->
+#### `locationalCreated`
+
+The location where the Photograph was created, which may not be the same as the location depicted in the Photograph.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string | [`:Photograph`](#Photograph) |
+#### `lyricist`
+
+The person or organization who wrote lyrics.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Organization`](#Organization) <br> [`:Person`](#Person) | [`:MusicRecording`](#MusicRecording) |
+#### `meaningfulTime`
+
+The time when this song started to be meaningful to me.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date | [`:MusicRecording`](#MusicRecording) |
+#### `mediaURL`
+
+music media URL of the item.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| URL | [`:MusicRecording`](#MusicRecording) |
+#### `mentions`
+
+Indicates that the Photograph contains a reference to,but is not necessarily about a concept.
+status：Deactivate.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string |[`:Photograph`](#Photograph) |
+#### `musicGenre`
+
+Genre of the music.
+
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string |[`:MusicRecording`](#MusicRecording) |
+#### `name`
+
+The name of the item.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string |[`:Event`](#Event)<br>[`:MusicRecording`](#MusicRecording)<br>[`:Organization`](#Organization) <br> [`:Period`](#Period)<br>[`:Person`](#Person)<br>[`:Photograph`](#Photograph) |
+#### `nickname`
+
+The nickname of the item.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:string |[`:Person`](#Person) <br> [`:Organization`](#Organization) |
+#### `performerIn`
+
+Event that this person or Organization is a performer or participant in.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Event`](#Event) | [`:Organization`](#Organization)<br> [`:Person`](#Person) |
+#### `period`
+
+The stage that this item symbolizes.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Period`](#Period) | [`:Event`](#Event) <br>[`:MusicRecording`](#MusicRecording)|
+#### `photograph`
+
+The photograph which recorded by this MusicRecording.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Photograph`](#Photograph) | [`:MusicRecording`](#MusicRecording) |
+#### `publisher`
+
+The publisher of the MusicRecording.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Organization`](#Organization)<br>[`:Person`](#Person) | [`:MusicRecording`](#MusicRecording) |
+
+#### `recordAt`
+
+The Event where the Photograph was recorded.The Photograph may capture all or part of the event.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Event`](#Event)  | [`:Photograph`](#Photograph) |
+#### `screenshot`
+
+A link to a screenshot image of the app.
+status:Deactivate.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| SoftwareApplication | [`:Photograph`](#Photograph) |
+#### `socialMediaUrl`
+
+URL of the social media.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| `URL` | [`:Organization`](#Organization) <br> [`:Person`](#Person) |
+#### `startDate`
+
+The start date and time of the item .
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| xsd:date | [`:Event`](#Event)<br>[`:Period`](#Period) |
+#### `subEvent`
+
+An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Event`](#Event) | [`:Event`](#Event) |
+#### `superEvent`
+
+An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Event`](#Event) | [`:Event`](#Event) |
+#### `symbolizedEvent`
+
+The event symbolized by this song.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Event`](#Event)  | [`:MusicRecording`](#MusicRecording) |
+#### `symbolizedMood`
+
+The mood symbolized by this song.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| `xsd:string` | [`:MusicRecording`](#MusicRecording) |
+#### `symbolizedPerson`
+
+Person who symbolizaed by this song.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| [`:Organization`](#Organization)<br>[`:Person`](#Person) | [`:MusicRecording`](#MusicRecording) |
+#### `text`
+
+The textual content of this Photograph.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+|  `xsd:string` |[`:Photograph`](#Photograph) |
+#### `url`
+
+URL of the item.
+
+| Values expected to be one of these types                       | Used on these types     |
+| -------------------------------------------------------------- | ----------------------- |
+| `URL`| [`:Photograph`](#Photograph) |
+
+<br><br>
+## External Vocabulary References
+
+本文件多參考Schema.org之內容，並針對自訂主題做部分修正。
+
+### [Schema.org Vocabulary](https://schema.org)
+
+[**`schema:Event`**](https://schema.org/Event)  
+沿用 schema.org:Event 對Event的定義：在一特定時間地點發生的事件，可以是任何類型，包括演講、節慶與音樂會。並引用 schema.org:Event的屬性對Event做補充，包括：[attendee](https://schema.org/attendee)、[description](https://schema.org/description)、[duration](https://schema.org/duration)、[endDate](https://schema.org/endDate)、[location](https://schema.org/location)、[startDate](https://schema.org/startDate)、[subEvent](https://schema.org/subEvent)、[superEvent](https://schema.org/superEvent)。
+
+
+[**`schema:MusicRecording`**](https://schema.org/MusicRecording)
+沿用 schema.org:Event 對Event的定義：*A music recording (track), usually a single song.* 這裡廣義表示一首歌曲。並引用 schema.org:MusicRecording的屬性對MusicRecording做補充，包括：[abstract](https://schema.org/abstract)、[byArtist](https://schema.org/byArtist)、[datePublished](https://schema.org/datePublished)、[duration](https://schema.org/duration)、[inAlbum](https://schema.org/inAlbum)、[inLanguage](https://schema.org/inLanguage)、[name](https://schema.org/name)、[publisher](https://schema.org/publisher)。
+
+[**`schema:Organization`**](https://schema.org/Organization)  
+沿用 schema.org:Organization 對Organization的定義：*An organization such as a school, NGO, corporation, club, etc.* 並引用 schema.org:Organization的屬性對Organization做補充，包括：[email](https://schema.org/email)、[homeLocation](https://schema.org/homeLocation)、[image](https://schema.org/image)、[performerIn](https://schema.org/performerIn)。
+
+[**`schema:Person`**](https://schema.org/Person)  
+沿用 schema.org:Person 對Person的定義：*A person (alive, dead, undead, or fictional).* 並引用 schema.org:Person的屬性對Person做補充，包括：[affiliation](https://schema.org/affiliation)、[birthDate](https://schema.org/birthDate)、[deathDate](https://schema.org/deathDate)、[email](https://schema.org/email)、[homeLocation](https://schema.org/homeLocation)、[image](https://schema.org/image)、[performerIn](https://schema.org/performerIn)。
+
+[**`schema:Photograph`**](https://schema.org/Photograph)
+沿用 schema.org:Photograph 對Photograph的定義：*A photograph.* 並引用 schema.org:Person的屬性對Person做補充，包括：[abstract](https://schema.org/abstract)、[dateCreated](https://schema.org/dateCreated)、[datePublished](https://schema.org/datePublished)、[locationCreated](https://schema.org/locationCreated)、[mentions](https://schema.org/mentions)、[recordedAt](https://schema.org/recordedAt)、[text](https://schema.org/text)、[url](https://schema.org/url)。
+
+
+## Recent Changes 
+<!-- omit in toc -->
+<!-- ### Changes in version xx.xx (yyyy-mm-dd) -->
