@@ -93,7 +93,7 @@ Main MyOntology terms, grouped in **Class** categories.
 * **Properties:** 
 
 | category A | category B | category C |category D | category E | category H |category I | category L | category M |category N | category P | category R |category S | category T | category U |
-| -------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|
+| -------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |--------|-------- | -------- | -------- |
 |[`abstract`](#abstract)|[`birthDate`](#birthDate) |[`category`](#category)|[`dateCreated`](#dateCreated)|[`email`](#email)|[`homeLocation`](#homeLocation)|[`image`](#image)|[`location`](#location)|[`meaningfulTime`](#meaningfulTime)|[`name`](#name)|[`performerIn`](#performerIn)|[`recordAt`](#recordAt)|[`screenshot`](#screenshot)|[`text`](#text)|[`url`](#url)|
 |[`activeEndDate`](#activeEndDate)|[`byArtist`](#byArtist)|[`composer`](#composer)|[`datePublished`](#datePublished)|[`endDate`](#endDate)||[`inAlbum`](#inAlbum)|[`locationalCreated`](#locationalCreated)|[`mediaUrl`](#mediaUrl)|[`nickname`](#nickname)|[`period`](#period)||[`socialMediaUrl`](#socialMediaUrl)|
 |[`activeStartDate`](#activeStartDate)|[`byCoverArtist`](#byCoverArtist)||[`deathDate`](#deathDate)|||[`inLanguage`](#inLanguage)|[`lyricist`](lyricist)|[`mentions`](#mentions)||[`photograph`](#photograph)||[`startDate`](#startDate)|
