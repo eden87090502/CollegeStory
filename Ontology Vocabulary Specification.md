@@ -89,7 +89,7 @@ Main MyOntology terms, grouped in **Class** categories.
 
 
 
-* **Classes:** | [`Event`](#Event) | [`MusicRecording`](#MusicRecording)|[`Period`](#Period)|[`Person`](#Person) |[`Photograph`](#Photograph) |
+* **Classes:** | [`Event`](#Event) | [`MusicRecording`](#MusicRecording)|[`Organization`](#Organization)[`Period`](#Period)|[`Person`](#Person) |[`Photograph`](#Photograph) |
 * **Properties:** 
 
 | category A | category B | category C |category D | category E | category H |category I | category L | category M |category N | category P | category R |category S | category T | category U |
