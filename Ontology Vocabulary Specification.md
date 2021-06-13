@@ -43,7 +43,7 @@ Members of NYCU Workshop: [A Computational Journey Towards Humanities and Creati
   - [FOAF (Friend of a Friend) Vocabulary](#foaf-friend-of-a-friend-vocabulary)
   - [Dublin Core Terms](#dublin-core-terms)
 - [Acknowledgments](#acknowledgments)
-- [Recent Changes (未來改版時用)](#recent-changes-未來改版時用)
+- [Recent Changes](#recent-changes-未來改版時用)
 
 ## MyOntology at a glance 
 
@@ -51,12 +51,12 @@ This vocabulary defines 5 classes and 48 properties.
 
 Main MyOntology terms, grouped in **Class** categories. 
 
-- **[Event](#Event)** ： 任何形式的活動，活動必須包含地點與時間。活動規模不拘，類型不拘。
-- **[MusicRecording](#MusicRecording)**：音樂錄音，泛指一首歌曲。不限定是否完整，可以是一段歌曲片段或是一段哼唱片段。
+- **[Event](#Event)** : 任何形式的活動，活動必須包含地點與時間。活動規模不拘，類型不拘。
+- **[MusicRecording](#MusicRecording)** :音樂錄音，泛指一首歌曲。不限定是否完整，可以是一段歌曲片段或是一段哼唱片段。
 - **[Organization](#Organization)** :由人群組成之團體，不限組成方式。
-- **[Period](#Period)**：指人生中某一段有意義的時間區段，其區段為主觀認定。
-- **[Person](#Person)**：人物，其包括已過世、沒有生命分類以及虛擬人物。
-- **[Photograph](#Photograph)**：照片。
+- **[Period](#Period)** :指人生中某一段有意義的時間區段，其區段為主觀認定。
+- **[Person](#Person)** :人物，其包括已過世、沒有生命分類以及虛擬人物。
+- **[Photograph](#Photograph)** :照片。
 
 
 
