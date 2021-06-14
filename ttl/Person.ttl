@@ -1,0 +1,140 @@
+@prefix CollegeStory: <https://hackmd.io/IIe-LenGT6KqEmcPa1Q-dw?view> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://CollegeStory.com/高登泰> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/人社10>;
+  <http://CollegeStory.com/birthDate> "1998-09-05"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/email> "eden87090507@gmail.com";
+  <http://CollegeStory.com/homeLocation> "土城";
+  <http://CollegeStory.com/image> "https://github.com/eden87090502/CollegeStory/blob/main/photo-0613/P-高登泰.jpg"^^<http://CollegeStory.com/URL>;
+  <http://CollegeStory.com/name> "高登泰";
+  <http://CollegeStory.com/nickname> "登登";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/2017暑北迎新>, <http://CollegeStory.com/2017暑北迎新晚會>,
+    <http://CollegeStory.com/2018寒北>, <http://CollegeStory.com/單攻海之聲>, <http://CollegeStory.com/大一下生活缺乏歸屬>,
+    <http://CollegeStory.com/大一期末考>, <http://CollegeStory.com/愛上獨立樂團>, <http://CollegeStory.com/熱舞open%20house表演>,
+    <http://CollegeStory.com/熱舞大成>, <http://CollegeStory.com/追芷彤>, <http://CollegeStory.com/連假台南出遊>,
+    <http://CollegeStory.com/開始聽嘻哈>, <http://CollegeStory.com/陽光special>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/profile.php?id=100001403730864"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/2017暑北迎新> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/2017暑北迎新晚會> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/追芷彤> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/開始聽嘻哈> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/大一期末考> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/熱舞大成> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/大一下生活缺乏歸屬> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/連假台南出遊> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/陽光special> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/單攻海之聲> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/愛上獨立樂團> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/熱舞open%20house表演> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/2018寒北> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/人社10> a <http://CollegeStory.com/Organization> .
+
+<http://CollegeStory.com/葉芷彤> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/activeEndDate> "2018-10"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/activeStartDate> "2017-11"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/人社10>;
+  <http://CollegeStory.com/birthDate> "1999-1-13"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/email> "tammy1131158@gmail.com";
+  <http://CollegeStory.com/homeLocation> "中興新村";
+  <http://CollegeStory.com/name> "葉芷彤";
+  <http://CollegeStory.com/nickname> "芷彤";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/追芷彤>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/profile.php?id=100003123016401"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/張乃文> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/activeEndDate> "2020-07-21"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/activeStartDate> "2017-10"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/人社10>;
+  <http://CollegeStory.com/birthDate> "1999-3-18"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/deathDate> "2020-07-21"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/email> "murmur_03.chss06@g2.nctu.edu.tw";
+  <http://CollegeStory.com/homeLocation> "板橋";
+  <http://CollegeStory.com/image> "https://github.com/eden87090502/CollegeStory/blob/main/photo-0613/P-張乃文.jpg"^^<http://CollegeStory.com/URL>;
+  <http://CollegeStory.com/name> "張乃文";
+  <http://CollegeStory.com/nickname> "芋頭";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/大一期末考>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/nwchang03.tw"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/謝維璁> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/activeStartDate> "2017-09"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/人社10>;
+  <http://CollegeStory.com/birthDate> "1999-6-17"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/email> "joshborn880617@gmail.com";
+  <http://CollegeStory.com/homeLocation> "台南";
+  <http://CollegeStory.com/image> "https://github.com/eden87090502/CollegeStory/blob/main/photo-0613/P-謝維璁.jpg"^^<http://CollegeStory.com/URL>;
+  <http://CollegeStory.com/name> "謝維璁";
+  <http://CollegeStory.com/nickname> "璁";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/追芷彤>, <http://CollegeStory.com/連假台南出遊>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/profile.php?id=100004418534302"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/許皓鈞> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/activeEndDate> "2019-06"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/activeStartDate> "2017-11"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/人社10>;
+  <http://CollegeStory.com/birthDate> "1999-02-04"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/email> "r1238319850@gmail.com";
+  <http://CollegeStory.com/homeLocation> "台北";
+  <http://CollegeStory.com/name> "許皓鈞";
+  <http://CollegeStory.com/nickname> "肥宅";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/連假台南出遊>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/profile.php?id=100000590031127"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/張詠駿> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/activeEndDate> "2019-08"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/activeStartDate> "2017-10"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/人社10>;
+  <http://CollegeStory.com/birthDate> "1998-7-9"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/email> "denny_teo97@outlook.com";
+  <http://CollegeStory.com/homeLocation> "馬來西亞";
+  <http://CollegeStory.com/image> "https://github.com/eden87090502/CollegeStory/blob/main/photo-0613/P-張詠駿.jpg"^^<http://CollegeStory.com/URL>;
+  <http://CollegeStory.com/name> "張詠駿";
+  <http://CollegeStory.com/nickname> "哥哥";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/連假台南出遊>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/dannyteo97"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/杜佳翰> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/activeEndDate> "2019-06"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/activeStartDate> "2017-11"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/人社10>;
+  <http://CollegeStory.com/birthDate> "1999"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/email> "dujiahan831@gmail.com";
+  <http://CollegeStory.com/homeLocation> "台南";
+  <http://CollegeStory.com/image> "https://github.com/eden87090502/CollegeStory/blob/main/photo-0613/P-杜佳翰.jpg"^^<http://CollegeStory.com/URL>;
+  <http://CollegeStory.com/name> "杜佳翰";
+  <http://CollegeStory.com/nickname> "佳翰";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/連假台南出遊>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/chiahantu"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/陳思婷> a <http://CollegeStory.com/Person>;
+  <http://CollegeStory.com/activeStartDate> "2016-9"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/affiliation> <http://CollegeStory.com/松山303>;
+  <http://CollegeStory.com/birthDate> "1999-6-16"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/homeLocation> "台北";
+  <http://CollegeStory.com/image> "https://github.com/eden87090502/CollegeStory/blob/main/photo-0613/EP-09.jpg"^^<http://CollegeStory.com/URL>;
+  <http://CollegeStory.com/name> "陳思婷";
+  <http://CollegeStory.com/nickname> "肉絲";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/陽光special>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/profile.php?id=100001641625599&sk=about_contact_and_basic_info"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/松山303> a <http://CollegeStory.com/Organization> .
+
+<http://CollegeStory.com/陽光special> a <http://CollegeStory.com/Event> .
