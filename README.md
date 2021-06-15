@@ -9,6 +9,7 @@
   (2) 功能：可以依照Period、Person、Event以及MusicRecording 做查詢。（預期可以複合式查詢）。
   (3) 目前進度：將 SPARQL 安裝到 GUI上。
   (4) 目前的GUI介面
-  ![image](https://user-images.githubusercontent.com/49372467/122119063-5ba7c700-ce5b-11eb-9110-c3ba02b643c5.png)
+  ![image](https://user-images.githubusercontent.com/49372467/122119264-8e51bf80-ce5b-11eb-9c39-683c7d331108.png)
+
 
 
