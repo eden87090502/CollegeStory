@@ -1,10 +1,10 @@
 # CollegeStory
 
-1.SPARQL Endpoint：http://45.79.76.241:9999/blazegraph/
+1.SPARQL Endpoint：<br>http://45.79.76.241:9999/blazegraph/
 
-2.Ontology Vocabulary Specification：https://github.com/eden87090502/CollegeStory/blob/main/1.%20Ontology%20Vocabulary%20Specification.md
+2.Ontology Vocabulary Specification：<br>https://github.com/eden87090502/CollegeStory/blob/main/1.%20Ontology%20Vocabulary%20Specification.md
 
-3.視覺化Project
+3.視覺化Project<br>
   (1) 形式改為用python GUI 呈現。<br>
   (2) 功能：可以依照Period、Person、Event以及MusicRecording 做查詢。（預期可以複合式查詢）。<br>
   (3) 目前進度：將 SPARQL 安裝到 GUI上。<br>
