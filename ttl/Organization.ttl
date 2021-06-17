@@ -1,0 +1,22 @@
+@prefix CollegeStory: <https://hackmd.io/IIe-LenGT6KqEmcPa1Q-dw?view> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://CollegeStory.com/交大北友會> a <http://CollegeStory.com/Organization>;
+  <http://CollegeStory.com/activeEndDate> "2018-01-30"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/activeStartDate> "2017-09-08"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  <http://CollegeStory.com/description> "大一上的時候參加的友會，一開始因為暑北迎新的關係，很喜歡也很期待北友的活動。後來因為David與寒北活動淡出北友。";
+  <http://CollegeStory.com/name> "交通大學北區校友會";
+  <http://CollegeStory.com/nickname> "北友";
+  <http://CollegeStory.com/performerIn> <http://CollegeStory.com/2017暑北迎新>, <http://CollegeStory.com/2017暑北迎新晚會>,
+    <http://CollegeStory.com/2018寒北>;
+  <http://CollegeStory.com/socialMediaUrl> "https://www.facebook.com/NCTUBYsummercamp.alwaysbewithyou"^^<http://CollegeStory.com/URL> .
+
+<http://CollegeStory.com/2017暑北迎新晚會> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/2017暑北迎新> a <http://CollegeStory.com/Event> .
+
+<http://CollegeStory.com/2018寒北> a <http://CollegeStory.com/Event> .
