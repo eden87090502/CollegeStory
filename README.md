@@ -1,5 +1,7 @@
 # CollegeStory
 
+0. 0615336 高登泰 final project
+
 1.SPARQL Endpoint：<br>http://45.79.76.241:9999/blazegraph/
 
 2.Ontology Vocabulary Specification：<br>https://github.com/eden87090502/CollegeStory/blob/main/1.%20Ontology%20Vocabulary%20Specification.md
