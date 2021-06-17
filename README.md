@@ -1,5 +1,4 @@
 # CollegeStory
-
 0. 0615336 高登泰 final project
 
 1.SPARQL Endpoint：<br>http://45.79.76.241:9999/blazegraph/
