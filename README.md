@@ -19,4 +19,8 @@
     - 查詢Event 將在下方資訊欄顯示event名稱、所屬period、attendee與description
   
   - Demo 影片：https://youtu.be/NrpCY8DBSqk
-
+ 
+ 4.【備註】
+  - sparql 跟 視覺化GUI 有些許bug，如果未來要再繼續project再做修正。
+  - 未來展望：將GUI頁面變成網頁形式。
+  - 心得：這是我做過最大的程式project，過程中大多徒法煉鋼或邊做邊查，所以內容有些粗糙，還請見諒。謝謝老師。
