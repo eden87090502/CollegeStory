@@ -18,5 +18,5 @@
     - 查詢Song 將在下方資訊欄顯示歌曲名稱、歌曲的meaningfulTime、歌曲的symbolizedEvent 與 descriptionStory
     - 查詢Event 將在下方資訊欄顯示event名稱、所屬period、attendee與description
   
-  -Demo 影片：https://youtu.be/NrpCY8DBSqk
+  - Demo 影片：https://youtu.be/NrpCY8DBSqk
 
